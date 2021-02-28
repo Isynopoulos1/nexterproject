@@ -148,8 +148,14 @@ body {
   margin-bottom: 4rem; }
 
 .homes {
-  background-color: #171717;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7 rem; }
+
+.home {
+  background-color: #f9f7f6; }
 
 .gallery {
   background-color: #54483a;
