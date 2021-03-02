@@ -260,7 +260,33 @@ body {
 
 .footer {
   background-color: #171717;
-  grid-column: full-start / full-end; }
-  .footer > * {
-    padding: 40px;
-    font-size: 3rem; }
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.04);
+    transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%; }
